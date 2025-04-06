@@ -1,0 +1,108 @@
+/**
+ * Form Enhancer - Styles
+ */
+
+/* Ensure containers are positioned correctly */
+.frm_form_field {
+    position: relative !important;
+}
+
+.efe-field-container {
+    position: relative !important;
+}
+
+/* Validation message styles */
+.efe-validation-message {
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    display: none;
+}
+
+.efe-validation-message.error {
+    background-color: #ffe6e6;
+    color: #d32f2f;
+    border-left: 3px solid #d32f2f;
+    display: block;
+}
+
+.efe-validation-message.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-left: 3px solid #2e7d32;
+    display: block;
+}
+
+.efe-validation-message.loading {
+    background-color: #e3f2fd;
+    color: #1976d2;
+    border-left: 3px solid #1976d2;
+    display: block;
+}
+
+/* Postcode suggestions */
+.efe-suggestions {
+    position: absolute !important;
+    z-index: 9999 !important;
+    width: 100% !important;
+    max-height: 200px !important;
+    overflow-y: auto !important;
+    background-color: white !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+    margin-top: 1px !important;
+    font-family: inherit !important;
+    left: 0 !important;
+    right: 0 !important;
+}
+
+/* Custom scrollbar styling */
+.efe-suggestions::-webkit-scrollbar {
+    width: 6px !important;
+}
+
+.efe-suggestions::-webkit-scrollbar-track {
+    background: #f5f5f7 !important;
+    border-radius: 4px !important;
+}
+
+.efe-suggestions::-webkit-scrollbar-thumb {
+    background: #d6d6d6 !important;
+    border-radius: 4px !important;
+}
+
+.efe-suggestions::-webkit-scrollbar-thumb:hover {
+    background: #c4c4c4 !important;
+}
+
+/* Suggestion items styling */
+.efe-suggestion {
+    padding: 12px 16px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    color: #000 !important;
+    user-select: none !important;
+    font-size: 16px !important;
+    display: block !important;
+    background-color: white !important;
+    border-bottom: 1px solid #f0f0f0 !important;
+    margin: 0 !important;
+}
+
+/* Visual feedback */
+input.efe-validated {
+    border-color: #2e7d32 !important;
+    background-color: #f0fff0 !important;
+    transition: all 0.3s ease;
+}
+
+input.efe-error {
+    border-color: #d32f2f !important;
+    background-color: #fff6f6 !important;
+}
+
+input.efe-loading {
+    background-color: #f8f8f8 !important;
+}
